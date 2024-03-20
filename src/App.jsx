@@ -10,6 +10,7 @@ import PageNotFound from "./pages/404/PageNotFound";
 import Explore from "./pages/explore/Explore";
 import SearchResult from "./pages/searchResult/SearchResult";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 function App() {
   const dispatch = useDispatch();
   const url = useSelector((store) => store.home.url);
@@ -41,7 +42,7 @@ function App() {
         <Route path="/explore/:mediaType" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      {/* Footer */}
+      <Footer />
     </BrowserRouter>
   );
 }

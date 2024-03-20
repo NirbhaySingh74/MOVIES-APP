@@ -19,7 +19,7 @@ const HeroBanner = () => {
       url.backdrop +
       data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
     setBackground(bg);
-    console.log(bg);
+    // console.log(bg);
   }, [data]);
 
   const searchQueryHandler = (event) => {
@@ -29,6 +29,7 @@ const HeroBanner = () => {
     }
   };
   // console.log(query);
+  // console.log(background);
   return (
     <div className="heroBanner">
       {!loading && (
